@@ -21,7 +21,7 @@ public class foreachEx {
 		}
 		System.out.println();
 		
-		for(Week day : Week.values()) //이 메소드는 기억해두자!!!
+		for(Week day : Week.values()) //나열의 값을 가져오는 
 			System.out.print(day + "요일 ");
 		System.out.println();
 		
