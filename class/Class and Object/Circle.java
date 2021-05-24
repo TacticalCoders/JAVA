@@ -5,6 +5,11 @@ public class Circle {
 	
 	public Circle() {} ; //생성자, 중괄호까지 꼭 입력해야함.
 	
+	public Circle(int r, String n){
+		radius = r; 
+		name = n;
+	}
+	
 	public double getArea() {
 		return 3.14*radius*radius;
 	}
@@ -12,9 +17,7 @@ public class Circle {
 	public static void main(String[] args) {
 		
 		Circle pizza; //circle이라는 객체를 생성할 객체 레퍼런스 선언.
-		pizza = new Circle(); //Circle 객체 생성 (실제로 찍어낸 것)
-		pizza.radius=10; //객체 필드에 접근할 때는 객체레퍼런스명.변수명 
-		pizza.name="도미노피자";
+		pizza = new Circle(10,"도미노피자"); //Circle 객체 생성 (실제로 찍어낸 것)
 		double area = pizza.getArea(); //메소드도 마찬가지로 객체레퍼런스명.메소드
 		System.out.println(pizza.name+"의 면적은 "+ area);
 		
