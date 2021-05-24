@@ -6,7 +6,7 @@ class Rectangle { //한 파일에 클래스가 여러개 있어도 됨.(클래�
 	public int getArea() {
 		return width*height;
 	}
-	//기본생성자 생략해도 자동으로 생성.
+	//컴파일러가 기본 생성자 삽입해줌. 단, 변수가 있는 생성자가 하나라도 존재하면 컴파일러가 기본생성자를 생성해주지 않음. 
 }
 
 public class RectApp {
