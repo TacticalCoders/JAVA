@@ -3,9 +3,9 @@ public class Circle {
 	int radius; //클래스의 필드 부분
 	String name;
 	
-	public Circle() {} ; //생성자, 중괄호까지 꼭 입력해야함.
+	public Circle() {}  //생성자, 중괄호까지 꼭 입력해야함. 반환형은 입력하지 않는다.
 	
-	public Circle(int r, String n){
+	public Circle(int r, String n){ //생성자 오버로딩 
 		radius = r; 
 		name = n;
 	}
