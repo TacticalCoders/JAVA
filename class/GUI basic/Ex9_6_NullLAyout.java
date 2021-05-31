@@ -10,8 +10,8 @@ public class Ex9_6_NullLAyout extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		
-		c.setLayout(null); //¿Ö NULLÀ» ÇÏ´Â°¡? ±âº»À¸·Î ¹èÄ¡°ü¸®ÀÚ°¡ ºÎ¿©µÇ¾î ÀÖ±â ¶§¹®, µû¶ó¼­ NULLÀ» ²À ÇØÁà¾ß ÇÑ´Ù.
-		//ÄÄÆ÷³ÍÆ®ÀÇ À§Ä¡³ª Å©±â¸¦ Á÷Á¢ ¼³Á¤ÇÏ°í ½ÍÀº °æ¿ì, ¹èÄ¡°ü¸®ÀÚ¸¦ null·Î ÇÑ´Ù.
+		c.setLayout(null); //ì™œ NULLì„ í•˜ëŠ”ê°€? ê¸°ë³¸ìœ¼ë¡œ ë°°ì¹˜ê´€ë¦¬ìê°€ ë¶€ì—¬ë˜ì–´ ìˆê¸° ë•Œë¬¸, ë”°ë¼ì„œ NULLì„ ê¼­ í•´ì¤˜ì•¼ í•œë‹¤.
+		//ì»´í¬ë„ŒíŠ¸ì˜ ìœ„ì¹˜ë‚˜ í¬ê¸°ë¥¼ ì§ì ‘ ì„¤ì •í•˜ê³  ì‹¶ì€ ê²½ìš°, ë°°ì¹˜ê´€ë¦¬ìë¥¼ nullë¡œ í•œë‹¤.
 		
 		JLabel la = new JLabel("Hello, Press Buttons");
 		la.setLocation(130, 50);
@@ -19,7 +19,7 @@ public class Ex9_6_NullLAyout extends JFrame {
 		c.add(la);
 		
 		for(int i=1; i<=9; i++) {
-			JButton b = new JButton(Integer.toString(i)); //Á¤¼ö¸¦ ¹®ÀÚ¿­·Î º¯È¯. b´Â Ãß°¡ÇÏ±â À§ÇÑ ÀÓ½Ã ·¹ÆÛ·±½º º¯¼ö.
+			JButton b = new JButton(Integer.toString(i)); //ì •ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ ë³€í™˜. bëŠ” ì¶”ê°€í•˜ê¸° ìœ„í•œ ì„ì‹œ ë ˆí¼ëŸ°ìŠ¤ ë³€ìˆ˜.
 			b.setLocation(i*15, i*15);
 			b.setSize(50,20);
 			c.add(b);
