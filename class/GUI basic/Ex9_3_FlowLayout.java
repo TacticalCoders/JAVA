@@ -8,10 +8,10 @@ public class Ex9_3_FlowLayout extends JFrame {
 	public Ex9_3_FlowLayout() {
 		
 		setTitle("FlowLayout smaple");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //¼ÂµğÆúÆ®Å¬·ÎÁî¿ÀÆÛ·¹ÀÌ¼Ç
-		Container c = getContentPane(); //ÄÁÅÙÆ®ÆÒÀÇ ÀÚ·áÇüÀº Container
-		//·¹ÀÌ¾Æ¿ôÀº ¾îµğ¿¡? -> ÄÁÅÙÆ®ÆÒ¿¡´Ù°¡ ÇÏ´Â °ÍÀÌ¹Ç·Î Á¢±ÙÁöÁ¤ÀÚ¸¦ ÀÌ¿ëÇØ¾ß!
-		c.setLayout(new FlowLayout(FlowLayout.LEFT,30,40));//¿ŞÂÊ Á¤·Ä, °¡·Î °£°İ 30, ¼¼·Î °£°İ 40
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //ì…‹ë””í´íŠ¸í´ë¡œì¦ˆì˜¤í¼ë ˆì´ì…˜
+		Container c = getContentPane(); //ì»¨í…íŠ¸íŒ¬ì˜ ìë£Œí˜•ì€ Container
+		//ë ˆì´ì•„ì›ƒì€ ì–´ë””ì—? -> ì»¨í…íŠ¸íŒ¬ì—ë‹¤ê°€ í•˜ëŠ” ê²ƒì´ë¯€ë¡œ ì ‘ê·¼ì§€ì •ìë¥¼ ì´ìš©í•´ì•¼!
+		c.setLayout(new FlowLayout(FlowLayout.LEFT,30,40));//ì™¼ìª½ ì •ë ¬, ê°€ë¡œ ê°„ê²© 30, ì„¸ë¡œ ê°„ê²© 40
 		c.add(new JButton("add"));
 		c.add(new JButton("sub"));
 		c.add(new JButton("mul"));
