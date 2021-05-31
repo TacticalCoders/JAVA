@@ -10,8 +10,8 @@ public class Ex9_4_BorderLayout extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		
-		c.setLayout(new BorderLayout(30,20)); //¼öÆò °£°İÀº 30, ¼öÁ÷ °£°İÀº 20.
-		//BorderLayoutÀº µ¿¼­³²ºÏ, °¡¿îµ¥·Î ¿µ¿ªÀÌ ³ª´©¾îÁ® ÀÖÀ¸¹Ç·Î ÁıÀû ¼Ó¼ºÀ» ÁöÁ¤ÇØ¾ß ÇÑ´Ù.
+		c.setLayout(new BorderLayout(30,20)); //ìˆ˜í‰ ê°„ê²©ì€ 30, ìˆ˜ì§ ê°„ê²©ì€ 20.
+		//BorderLayoutì€ ë™ì„œë‚¨ë¶, ê°€ìš´ë°ë¡œ ì˜ì—­ì´ ë‚˜ëˆ„ì–´ì ¸ ìˆìœ¼ë¯€ë¡œ ì§‘ì  ì†ì„±ì„ ì§€ì •í•´ì•¼ í•œë‹¤.
 		c.add(new JButton("add"),BorderLayout.NORTH);
 		c.add(new JButton("sub"),BorderLayout.SOUTH);
 		c.add(new JButton("mul"),BorderLayout.WEST);
